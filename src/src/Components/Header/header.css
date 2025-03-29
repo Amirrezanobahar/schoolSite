@@ -1,0 +1,89 @@
+.header {
+
+  height: 120px;
+  background: linear-gradient(to right, #3282B8 10%, #0F4C75);
+  display: flex;
+  align-items: center;
+  padding-right: 20%;
+  padding-top: 5px;
+}
+
+.rightImage{
+  content: "";
+  height: 1200px;
+  width:385px;
+  position: absolute;
+  top: 170px;
+  right: 0;
+  background: url(../../images/rightImage.png);
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+.rightImage::after{
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  background-color: #ab3030;
+  right:80px;
+  top: 455px;
+  background: url(../../icons/Shoori.svg);
+  background-size: cover;
+}
+
+
+.schoolName {
+
+  height: 80px;
+  font-family: "IRANNastalig";
+  color: #fff;
+  font-size: 35px;
+  text-shadow: 1px 1px 2px black;
+  cursor: pointer;
+}
+
+.schoolIcon {
+  margin-right: 170px;
+}
+
+.schoolIcon img {
+  width: 115px;
+}
+
+.navbar {
+  background-color: #27374D;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 0 15% 0;
+  font-weight: 500;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+}
+
+.navbaritems {
+  color: white;
+  position: relative;
+  padding: 10px 20px;
+  cursor: pointer;
+
+}
+
+.navbaritems::after {
+  content: "";
+  position: absolute;
+  background-color: #BBE1FA;
+  width: 0;
+  height: 4px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all .5s ease;
+
+}
+
+.navbaritems:hover::after {
+  width: 100%;
+}

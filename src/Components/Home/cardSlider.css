@@ -1,0 +1,172 @@
+/* استایل کلی اسلایدر */
+.card-slider-container {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* گرادینت پس‌زمینه */
+}
+
+/* استایل هر اسلاید */
+.card-slider-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+.card-slider-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* استایل تصویر */
+.card-slider-item img {
+  width: 100%;
+  max-height:300px;
+  object-fit:cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-position: center;
+  background-size: cover;
+}
+
+/* استایل عنوان */
+.card-slider-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* استایل توضیحات */
+.card-slider-description {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* استایل navigation (دکمه‌های چپ و راست) */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #007bff;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.5rem;
+}
+
+/* استایل pagination (نقاط پایین اسلایدر) */
+.swiper-pagination-bullet {
+  background-color: #007bff;
+  opacity: 0.5;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* استایل خطای دریافت داده */
+.card-slider-error {
+  color: #ff4d4f;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* استایل اسکلتون برای حالت لودینگ */
+.card-slider-skeleton-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card-slider-skeleton {
+  flex: 1;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  height: 300px;
+  animation: skeleton-loading 1.5s infinite ease-in-out;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* رسپانسیو برای صفحات کوچک */
+@media (max-width: 768px) {
+  .card-slider-title {
+    font-size: 1.2rem;
+  }
+
+  .card-slider-description {
+    font-size: 0.9rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 30px;
+    height: 30px;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .card-slider-item {
+    padding: 15px;
+  }
+
+  .card-slider-title {
+    font-size: 1rem;
+  }
+
+  .card-slider-description {
+    font-size: 0.8rem;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+}

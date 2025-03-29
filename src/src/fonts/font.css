@@ -1,0 +1,23 @@
+@font-face {
+    font-family:"IRANSans";
+    src: url(IRANSansWeb.woff2);
+    font-weight: normal;
+  }
+  @font-face {
+    font-family:"IRANSans";
+    src: url(IRANSansWeb_Medium.woff2);
+    font-weight: 500;
+
+  }
+  @font-face {
+    font-family:"IRANSans";
+    src: url(IRANSansWeb_Bold.woff);
+    font-weight: bold;
+
+  }
+  @font-face {
+    font-family:"IRANNastalig";
+    src: url(IranNastaliq.woff2);
+    font-weight:400;
+
+  }

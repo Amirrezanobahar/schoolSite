@@ -1,0 +1,405 @@
+.header {
+  height: 120px;
+  background: linear-gradient(to right, #3282B8 10%, #0F4C75);
+  display: flex;
+  align-items: center;
+  padding-right: 20%;
+  padding-top: 5px;
+}
+
+.rightImage::after {
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  background-color: #ab3030;
+  right: 80px;
+  top: 455px;
+  background: url(../../icons/Shoori.svg);
+  background-size: cover;
+}
+
+.schoolName {
+  height: 80px;
+  font-family: "IRANNastalig";
+  color: #fff;
+  font-size: 35px;
+  text-shadow: 1px 1px 2px black;
+  cursor: pointer;
+}
+
+.schoolIcon {
+  margin-right: 170px;
+}
+
+.schoolIcon img {
+  width: 115px;
+}
+
+/* استایل کلی نوار ناوبری */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  /* رنگ پس‌زمینه */
+  padding: 10px 20px;
+  color: white;
+  /* رنگ متن */
+  font-family: Arial, sans-serif;
+}
+.navbarMobile {
+  display: none !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  /* رنگ پس‌زمینه */
+  padding: 10px 20px;
+  color: white;
+  /* رنگ متن */
+  font-family: Arial, sans-serif;
+}
+
+/* استایل آیتم‌های نوار ناوبری */
+.navbar ul {
+  list-style-type: none;
+  /* حذف علامت‌های لیست */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  /* فاصله بین آیتم‌ها */
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+.navbar ul li a {
+  color: white;
+  /* رنگ متن لینک‌ها */
+  text-decoration: none;
+  /* حذف زیرخط لینک‌ها */
+  padding: 8px 12px;
+  border-radius: 4px;
+  /* لبه‌های گرد */
+  transition: background-color 0.3s ease;
+  /* انیمیشن تغییر رنگ */
+}
+
+.navbar ul li a:hover {
+  background-color: #555;
+  /* تغییر رنگ پس‌زمینه هنگام هاور */
+}
+
+/* استایل دکمه‌ها و لینک‌ها */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+/* استایل پیام‌های خطا */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* استایل حالت بارگذاری */
+.loading-message {
+  color: #ccc;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* استایل بخش دبیران */
+.teachers-list {
+  margin-top: 10px;
+}
+
+.teachers-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.teachers-list ul li {
+  margin-bottom: 5px;
+}
+
+.teachers-list ul li a {
+  color: #4CAF50;
+  /* رنگ متن لینک‌های دبیران */
+  text-decoration: none;
+}
+
+.teachers-list ul li a:hover {
+  text-decoration: underline;
+  /* زیرخط هنگام هاور */
+}
+
+/* Media Queries برای ریسپانسیو */
+@media only screen and (max-width: 1024px) {
+  .header {
+    height: 100px;
+    padding-right: 15%;
+    padding-top: 5px;
+  }
+
+  .rightImage::after {
+    height: 160px;
+    width: 160px;
+    right: 70px;
+    top: 455px;
+  }
+
+  .schoolName {
+    height: 70px;
+    font-size: 30px;
+  }
+
+  .schoolIcon {
+    margin-right: 150px;
+  }
+
+  .navbar {
+    gap: 15px;
+    padding: 0 12% 0;
+  }
+
+  .navbaritems {
+    padding: 8px 16px;
+  }
+
+  .navbaritems:hover {
+    transform: translate(-3px, -3px);
+  }
+
+  .navbaritems::after {
+    height: 3px;
+    bottom: -3px;
+    left: 40%;
+    transform: translateX(-40%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    height: 120px;
+    background: linear-gradient(to right, #3282B8 10%, #0F4C75);
+    display: flex;
+    align-items: center;
+    padding-right: 20%;
+    padding-top: 5px;
+  }
+
+  .rightImage::after {
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: #ab3030;
+    right: 80px;
+    top: 455px;
+    background: url(../../icons/Shoori.svg);
+    background-size: cover;
+  }
+
+  .schoolName {
+    height: 80px;
+    font-family: "IRANNastalig";
+    color: #fff;
+    font-size: 35px;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+  }
+
+  .schoolIcon {
+    margin-right: 170px;
+  }
+
+  .schoolIcon img {
+    width: 115px;
+  }
+
+  /* استایل کلی نوار ناوبری */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    /* رنگ پس‌زمینه */
+    padding: 10px 20px;
+    color: white;
+    /* رنگ متن */
+    font-family: Arial, sans-serif;
+  }
+
+  /* استایل آیتم‌های نوار ناوبری */
+  .navbar ul {
+    list-style-type: none;
+    /* حذف علامت‌های لیست */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    /* فاصله بین آیتم‌ها */
+  }
+
+  .navbar ul li {
+    display: inline-block;
+  }
+
+  .navbar ul li a {
+    color: white;
+    /* رنگ متن لینک‌ها */
+    text-decoration: none;
+    /* حذف زیرخط لینک‌ها */
+    padding: 8px 12px;
+    border-radius: 4px;
+    /* لبه‌های گرد */
+    transition: background-color 0.3s ease;
+    /* انیمیشن تغییر رنگ */
+  }
+
+  .navbar ul li a:hover {
+    background-color: #555;
+    /* تغییر رنگ پس‌زمینه هنگام هاور */
+  }
+
+  /* استایل دکمه‌ها و لینک‌ها */
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar a:hover {
+    background-color: #555;
+  }
+
+  /* استایل پیام‌های خطا */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  /* .NavbarItems:nth-child(1){
+  display: none;
+}
+.navbaritems:nth-child(1){
+  display: none;
+
+} */
+  /* .navbar:nth-child(2){
+  display: none;
+} */
+  /* .navbaritems:nth-child(2){
+  display: none;
+
+}  */
+
+  /* استایل حالت بارگذاری */
+  .loading-message {
+    color: #ccc;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  /* استایل بخش دبیران */
+  .teachers-list {
+    margin-top: 10px;
+  }
+
+  .teachers-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .teachers-list ul li {
+    margin-bottom: 5px;
+  }
+
+  .teachers-list ul li a {
+    color: #4CAF50;
+    /* رنگ متن لینک‌های دبیران */
+    text-decoration: none;
+  }
+
+  .teachers-list ul li a:hover {
+    text-decoration: underline;
+    /* زیرخط هنگام هاور */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    height: 60px;
+    padding-right: 10%;
+    padding-top: 3px;
+
+  }
+
+  .rightImage::after {
+    height: 130px;
+    width: 130px;
+    right: 30px;
+    top: 400px;
+  }
+
+  .schoolName {
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .schoolIcon {
+    margin-right: 90px;
+  }
+
+  .schoolIcon img {
+    width: 60px;
+  }
+
+  .navbar {
+    gap: 8px;
+    padding: 0 8% 0;
+    display: none;
+  }
+
+  .navbarMobile {
+    display: none;
+    display: block !important;
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
+  .navbaritems {
+    padding: 4px 10px;
+    font-size: 16px;
+  }
+
+  .navbaritems:hover {
+    transform: translate(-1px, -1px);
+  }
+
+  .navbaritems::after {
+    height: 1.5px;
+    bottom: -1px;
+    left: 40%;
+    transform: translateX(-40%);
+  }
+
+  .navbar .HomeBackgrond::after {
+    display: none;
+  }
+}

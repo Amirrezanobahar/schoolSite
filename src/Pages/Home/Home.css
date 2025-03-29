@@ -1,0 +1,1041 @@
+@keyframes zoomBackground {
+    0% {
+        background-size: 100%;
+    }
+
+    100% {
+        background-size: 120%;
+    }
+}
+
+.HomeBackgrond {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: url(../../images/img5.jpg);
+    z-index: -1;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.HomeBackgrond::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgb(20, 124, 123, .2);
+}
+
+
+
+.slider {
+    width: 100%;
+    height: 800px;
+
+    /* transform: scale(1.2); */
+}
+
+.slider .sliderContainer {
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-position: center center !important;
+    display: inline-grid;
+    overflow: hidden;
+    animation: zoomBackground 10s infinite alternate;
+
+}
+
+
+
+
+.SchoolHistory {
+    z-index: 2;
+    background-color: #fff;
+    height: auto;
+    padding: 60px 100px;
+    font-family: "IRANSansWeb.woff2";
+    position: relative;
+
+}
+
+.SchoolHistory::after {
+    content: "";
+    background-color: #a94848;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 130px;
+    top: 100px;
+    background: url(../../icons/Shoori.svg);
+    background-size: cover;
+}
+
+.SchoolHistory span {
+    font-size: 22px;
+    font-family: "IRANSansWeb.woff2";
+    color: gray;
+
+}
+
+.SchoolHistory span h1 {
+    color: black;
+}
+
+.SchoolHistory p {
+    font-size: 22px;
+    font-family: "IRANSansWeb.woff2";
+    color: gray;
+    width: 800px;
+    text-align: justify;
+
+}
+
+.RegistrationDiv {
+    height: 200px;
+    background-color: rgba(255, 255, 255, .5);
+    position: absolute;
+    bottom: -500px;
+    left: 125px;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: "IRANSansWeb.woff2";
+}
+
+.RegistrationDiv h1 {
+    color: #981414;
+}
+
+.RegistrationDiv p {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: "IRANSansWeb.woff2";
+    color: rgb(49, 49, 49);
+    padding: 10px;
+    font-weight: bold;
+    /* text-align: justify; */
+}
+
+.akbar {
+    background-color: #fff;
+    height: 600px;
+    margin-top: 500px;
+    display: flex;
+}
+
+.akbar .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px;
+    text-align: justify;
+
+}
+
+.akbar .left {
+
+    flex: 1;
+    background: url(../../images/akbar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+.GenralContent {
+    height: 750px;
+    background: url(../../images/tabriz3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-around;
+    position: relative;
+
+}
+
+.GenralContent::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(25, 0, 255, 0.3);
+}
+
+.GenralContent .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.GenralContent .row .content {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GenralContent .row .content .text-in-content {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    gap: 10px;
+
+}
+
+.GenralContent .row .content .text-in-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    opacity: .9;
+}
+
+.GenralContent .row .content .text-in-content h1 {
+    font-family: "IRANSansWeb.woff2";
+    color: #d2691e;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+.GenralContent .row .content .text-in-content span {
+    font-family: "IRANSansWeb.woff2";
+    font-size: 24px;
+    color: rgb(213, 213, 213);
+    text-shadow: 1px 1px 2px black;
+    font-weight: 800;
+    width: 150px;
+    text-align: center;
+}
+
+.Teachers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F4C75;
+    height: 500px;
+    width: 100%;
+    position: relative;
+
+}
+
+.title_teachers {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: #fff;
+    font-family: "IRANSansWeb.woff2";
+    font-size: 24px;
+    text-shadow: 1px 1px 2px black;
+}
+
+#slider {
+    border-radius: 10px;
+}
+
+#main-slider-container {
+    width: 65% !important;
+}
+
+.slider-card-title {
+    text-align: center;
+    font-family: "IRANSansWeb.woff2";
+    font-size: 24px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, .5);
+    font-weight: 500;
+}
+
+.slider-card-description {
+    text-align: center;
+    font-family: "IRANSansWeb.woff2";
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, .5);
+    font-weight: 400;
+}
+
+.slider-card {
+    background-color: #3282B8 !important;
+}
+
+.rightImage {
+    content: "";
+    height: 1200px;
+    width: 385px;
+    position: absolute;
+    top: 170px;
+    right: 0;
+    background: url(../../images/rightImage.png);
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+
+
+/* //////////////////////////////////////////////1024 */
+
+@media only screen and (max-width:1024px) {
+
+    .slider {
+        width: 100%;
+        height: 650px;
+
+        /* transform: scale(1.2); */
+    }
+}
+
+/* //////////////////////////////////////////////910 */
+@media only screen and (max-width:910px) {
+
+    .HomeBackgrond {
+        width: 100vw;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .HomeBackgrond::after {
+        content: "";
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        top: 0;
+    }
+
+    .slider {
+        width: 100%;
+        height: 400px;
+
+        /* transform: scale(1.2); */
+    }
+
+    .slider .sliderContainer {
+        width: 100%;
+        height: 100%;
+        background-size: 100%;
+    }
+
+
+    .SchoolHistory {
+        height: auto;
+        padding: 20px 40px;
+
+    }
+
+    .SchoolHistory::after {
+        content: "";
+        width: 20%;
+        height: 40%;
+        left: 50px;
+        top: 110px;
+    }
+
+    .SchoolHistory span {
+        font-size: 18px;
+
+    }
+
+    .SchoolHistory span h1 {
+        font-size: 22px;
+    }
+
+    .SchoolHistory p {
+        font-size: 18px;
+        width: 450px;
+
+    }
+
+    .rightImage {
+        display: none;
+    }
+
+    .RegistrationDiv {
+        height: 400px;
+        bottom: -400px;
+        left: 100px;
+        width: 300px;
+        gap: 10px;
+    }
+
+    .RegistrationDiv h1 {
+        font-size: 24px;
+    }
+
+    .RegistrationDiv p {
+        width: 100%;
+        font-size: 24px;
+        padding: 8px;
+
+    }
+
+    .akbar {
+        height: 500px;
+        margin-top: 400px;
+        display: flex;
+    }
+
+    .akbar .right {
+        row-gap: 15px;
+        padding: 15px;
+
+    }
+
+    .akbar .right h1 {
+        font-size: 18px;
+    }
+
+    .akbar .right span {
+        font-size: 14px;
+    }
+
+    .akbar .right p {
+        font-size: 14px;
+    }
+
+
+
+    .GenralContent {
+        height: 650px;
+        padding: 15px;
+    }
+
+
+    .GenralContent .row .content {
+        width: 200px;
+        height: 200px;
+
+    }
+
+    .GenralContent .row .content .text-in-content {
+        width: 30px;
+        height: 30px;
+        gap: 8px;
+
+    }
+
+    .GenralContent .row .content .text-in-content img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .GenralContent .row .content .text-in-content span {
+        font-size: 20px;
+        width: 120px;
+    }
+
+
+    .Teachers {
+
+        height: 300px !important;
+        width: 100%;
+
+    }
+
+    .title_teachers {
+        top: 25px;
+        right: 40px;
+        font-size: 20px;
+    }
+
+
+    #main-slider-container {
+        width: 50% !important;
+    }
+
+    .slider-card-title {
+        text-align: center;
+        font-family: "IRANSansWeb.woff2";
+        font-size: 24px;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, .5);
+        font-weight: 500;
+    }
+
+    .slider-card-description {
+        font-size: 18px;
+    }
+
+
+
+    .rightImage {
+        content: "";
+        height: 1100px;
+        width: 340px;
+        top: 150px;
+    }
+
+
+}
+
+/* //////////////////////////////////////////////790 */
+
+
+@media only screen and (max-width:790px) {
+
+    .HomeBackgrond {
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+    }
+
+    .HomeBackgrond::after {
+        content: "";
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        top: 0;
+    }
+
+    .slider {
+        width: 100%;
+        height: 300px;
+
+    }
+
+    .slider .sliderContainer {
+        width: 100%;
+        height: 100%;
+        background-size: 100%;
+    }
+
+
+    .SchoolHistory {
+        height: auto;
+        padding: 15px 30px;
+
+    }
+
+    .SchoolHistory::after {
+        content: "";
+        width: 15%;
+        height: 25%;
+        left: 50px;
+        top: 110px;
+    }
+
+    .SchoolHistory span {
+        font-size: 15px;
+
+    }
+
+    .SchoolHistory span h1 {
+        font-size: 18px;
+    }
+
+    .SchoolHistory p {
+        font-size: 15px;
+        width: 350px;
+
+    }
+
+    .rightImage {
+        display: none;
+    }
+
+    .RegistrationDiv {
+        height: 300px;
+        bottom: -300px;
+        left: 100px;
+        width: 250px;
+        gap: 10px;
+    }
+
+    .RegistrationDiv h1 {
+        font-size: 20px;
+    }
+
+    .RegistrationDiv p {
+        width: 100%;
+        font-size: 20px;
+        padding: 6px;
+
+    }
+
+    .akbar {
+        height: 650px;
+        margin-top: 300px;
+    }
+
+    .akbar .right {
+        row-gap: 13px;
+        padding: 13px;
+
+    }
+
+    .akbar .right h1 {
+        font-size: 16px;
+    }
+
+    .akbar .right span {
+        font-size: 12px;
+    }
+
+    .akbar .right p {
+        font-size: 12px;
+    }
+
+    .akbar .left {
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+    }
+
+    .GenralContent {
+        height: 650px;
+        padding: 15px;
+    }
+
+
+    .GenralContent .row .content {
+        width: 200px;
+        height: 200px;
+
+    }
+
+    .GenralContent .row .content .text-in-content {
+        width: 30px;
+        height: 30px;
+        gap: 8px;
+
+    }
+
+    .GenralContent .row .content .text-in-content img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .GenralContent .row .content .text-in-content span {
+        font-size: 20px;
+        width: 120px;
+    }
+
+
+    .Teachers {
+
+        height: 300px !important;
+        width: 100%;
+
+    }
+
+    .title_teachers {
+        top: 25px;
+        right: 40px;
+        font-size: 20px;
+    }
+
+
+    #main-slider-container {
+        width: 50% !important;
+    }
+
+    .slider-card-title {
+        text-align: center;
+        font-family: "IRANSansWeb.woff2";
+        font-size: 24px;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, .5);
+        font-weight: 500;
+    }
+
+    .slider-card-description {
+        font-size: 18px;
+    }
+
+
+
+    .rightImage {
+        content: "";
+        height: 1100px;
+        width: 340px;
+        top: 150px;
+    }
+
+}
+
+
+
+/* //////////////////////////////////////////////680 */
+
+@media only screen and (max-width:680px) {
+
+    .HomeBackgrond {
+        width: 100vw;
+        height: 100%;
+    }
+
+    .HomeBackgrond::after {
+        content: "";
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        top: 0;
+    }
+
+    .slider {
+        width: 100%;
+        height: 150px;
+
+    }
+
+    .slider .sliderContainer {
+        width: 100%;
+        height: 100%;
+        background-size: 100%;
+    }
+
+
+    .SchoolHistory {
+        height: auto;
+        padding: 10px 20px;
+        position: relative;
+
+    }
+
+    .SchoolHistory::after {
+        display: none;
+    }
+
+    .SchoolHistory span {
+        font-size: 12px;
+
+    }
+
+    .SchoolHistory span h1 {
+        font-size: 14px;
+    }
+
+    .SchoolHistory p {
+        font-size: 12px;
+        width: 350px;
+
+    }
+
+    .rightImage {
+        display: none;
+    }
+
+    .RegistrationDiv {
+        height: 200px;
+        bottom: -200px;
+        left: 80px;
+        width: 200px;
+        gap: 8px;
+    }
+
+    .RegistrationDiv h1 {
+        font-size: 18px;
+    }
+
+    .RegistrationDiv p {
+        width: 100%;
+        font-size: 18px;
+        padding: 5px;
+
+    }
+
+    .akbar {
+        height: 700px;
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .akbar .right {
+        row-gap: 13px;
+        padding: 13px;
+
+    }
+
+    .akbar .right h1 {
+        font-size: 16px;
+    }
+
+    .akbar .right span {
+        font-size: 12px;
+    }
+
+    .akbar .right p {
+        font-size: 12px;
+    }
+
+    .akbar .left {
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .GenralContent {
+        height: 550px;
+        padding: 12px;
+    }
+
+
+    .GenralContent .row .content {
+        width: 150px;
+        height: 150px;
+
+    }
+
+    .GenralContent .row .content .text-in-content {
+        width: 20px;
+        height: 20px;
+        gap: 6px;
+
+    }
+
+    .GenralContent .row .content .text-in-content img {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .GenralContent .row .content .text-in-content span {
+        font-size: 18px;
+        width: 100px;
+    }
+
+
+    .Teachers {
+
+        height: 250px !important;
+        width: 100%;
+
+    }
+
+    .title_teachers {
+        top: 20px;
+        right: 30px;
+        font-size: 15px;
+    }
+
+
+    #main-slider-container {
+        width: 40% !important;
+    }
+
+    .slider-card-title {
+        font-size: 20px;
+    }
+
+    .slider-card-description {
+        font-size: 16px;
+    }
+
+
+
+}
+
+/* //////////////////////////////////////////////480 */
+
+@media only screen and (max-width:480px) {
+
+    .HomeBackgrond {
+        width: 100vw;
+        height: 100%;
+    }
+
+    .HomeBackgrond::after {
+        content: "";
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        top: 0;
+    }
+
+    .slider {
+        width: 100%;
+        height: 300px;
+
+    }
+
+    .slider .sliderContainer {
+        width: 100%;
+        height: 100%;
+        background-size: 100%;
+    }
+
+
+    .SchoolHistory {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .SchoolHistory::after {
+        display: none;
+    }
+
+    .SchoolHistory span {
+        font-size: 18px;
+        text-align: justify;
+        line-height: 1.5rem;
+    }
+
+    .SchoolHistory span h1 {
+        font-size: 20px;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .SchoolHistory p {
+        font-size: 20px;
+        width: 270px;
+        line-height: 1.5rem;
+        width: 100%;
+
+    }
+
+    .rightImage {
+        display: none;
+    }
+
+    .RegistrationDiv {
+        height: 260px;
+        bottom: -260px;
+        width: 100%;
+        left: 0;
+        gap: 5px;
+    }
+
+    .RegistrationDiv h1 {
+        font-size: 15px;
+    }
+
+    .RegistrationDiv p {
+        width: 100%;
+        font-size: 15px;
+        padding: 3px;
+
+    }
+    
+
+    .akbar {
+        height: 1200px;
+        margin-top: 260px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .akbar .right {
+        row-gap: 8px;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+
+    }
+
+    .akbar .right div {
+        width: 90%;
+    }
+
+    .akbar .right h1 {
+        font-size: 20px;
+    }
+
+    .akbar .right span {
+        font-size: 18px;
+        color: gray;
+        width: 90%;
+    }
+
+    .akbar .right p {
+        font-size: 18px;
+        color: gray;
+        width: 90%;
+
+
+    }
+
+    .akbar .left {
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .GenralContent {
+        padding: 12px;
+flex-direction: row;
+    }
+
+    .GenralContent .row{
+        flex-direction: column;
+    }
+    .GenralContent .row .content {
+        width: 160px;
+        height: 160px;
+
+    }
+
+    .GenralContent .row .content .text-in-content {
+        width: 20px;
+        height: 20px;
+        gap: 5px;
+
+    }
+
+    .GenralContent .row .content .text-in-content img {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .GenralContent .row .content .text-in-content span {
+        font-size: 15px;
+        width: 70px;
+    }
+
+
+    .Teachers {
+
+        height: 200px !important;
+        width: 100%;
+
+    }
+
+    .title_teachers {
+        top: 10px;
+        right: 20px;
+        font-size: 10px;
+    }
+
+
+    #main-slider-container {
+        width: 30% !important;
+    }
+
+    .slider-card-title {
+        font-size: 10px;
+    }
+
+    .slider-card-description {
+        font-size: 13px;
+    }
+
+
+
+}

@@ -1,0 +1,631 @@
+/* head of footer */
+.footer {
+    height: auto;
+    background-color: #1B262C;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+
+}
+
+.footer .relation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+
+.footer .relation .relation-divs {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding-right: 10%;
+
+}
+.footer .relation .relation-divs:nth-child(3) loc-img {
+
+    margin-right: 0;
+}
+.footer .relation .relation-divs:nth-child(4) {
+
+    justify-content: start !important;
+
+}
+
+.footer .relation .relation-divs h1 {
+    font-size: 24px;
+}
+
+.footer .relation .relation-divs h1 span {
+    color: #d2691e;
+}
+
+.footer .relation .relation-divs .arow-img {}
+
+.footer .relation .relation-divs .arow-img img {
+
+    transform: rotate(180deg);
+    width: 120px;
+}
+
+.footer .relation .relation-divs .loc-img {
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    background-color: #d2691e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.footer .relation .relation-divs .loc-img img {
+
+    background-color: #d2691e;
+    width: 50px;
+}
+
+.footer .relation .relation-divs .phone-img {
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    background-color: #d2691e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.footer .relation .relation-divs .phone-img img {
+
+    width: 50px;
+}
+
+
+/* ButtonFooter */
+
+.ButtonFooter {
+    height: auto;
+    background-color: #27374D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    gap: 20px;
+    width: 100%;
+}
+
+.ButtonFooter .foter-text {
+    color: #fff;
+    padding: 40px;
+}
+
+.ButtonFooter .social {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(68, 99, 122, .17);
+    padding: 8px;
+    width: 800px;
+    border-radius: 50px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .8);
+}
+
+.ButtonFooter .social p {
+    color: #d2691e;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.ButtonFooter .social .socialImages {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 14px;
+    cursor: pointer;
+
+}
+
+.ButtonFooter .social .socialImages img {
+    width: 50px;
+}
+
+.ButtonFooter .social .socialImages :nth-child(4) img {
+    width: 80px;
+}
+
+.ButtonFooter .gogorioCS {
+    background-color: #1B262C;
+    width: inherit;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "IRANSans";
+    font-size: 16px;
+    padding: 10px 0px;
+    cursor: pointer;
+
+}
+.ButtonFooter .gogorioCS div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "IRANSans";
+    font-size: 16px;
+    padding: 5px 0px;
+    cursor: pointer;
+
+}
+
+.ButtonFooter .gogorioCS span {
+    color: #d2691e;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.ButtonFooter .gogorioCS :nth-child(2) img {
+    width: 40px;
+    margin-left: 5px;
+    border: 2px solid #d25d1e;
+    border-radius: 100%;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ////////////////////////////////////910 */
+@media only screen and (max-width:910px) {
+
+
+
+    .footer .relation {
+
+        padding: 8px;
+    }
+
+    .footer .relation .relation-divs {
+
+        gap: 6px;
+
+    }
+
+    .footer .relation .relation-divs h1 {
+        font-size: 20px;
+    }
+
+
+
+    .footer .relation .relation-divs .arow-img img {
+
+        width: 100px;
+    }
+
+    .footer .relation .relation-divs .loc-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer .relation .relation-divs .loc-img img {
+
+        width: 40px;
+    }
+
+    .footer .relation .relation-divs .phone-img {
+        width: 60px;
+        height: 60px;
+        background-color: #d2691e;
+
+    }
+
+    .footer .relation .relation-divs .phone-img img {
+
+        width: 40px;
+    }
+
+
+    /* ButtonFooter */
+
+    .ButtonFooter {
+        gap: 15px;
+    }
+
+    .ButtonFooter .foter-text {
+        padding: 30px;
+    }
+
+    .ButtonFooter .social {
+        padding: 6px;
+        width: 600px;
+    }
+
+    .ButtonFooter .social p {
+        font-size: 20px;
+    }
+
+    .ButtonFooter .social .socialImages {
+        gap: 12px;
+
+    }
+
+    .ButtonFooter .social .socialImages img {
+        width: 40px;
+    }
+
+    .ButtonFooter .social .socialImages :nth-child(4) img {
+        width: 60px;
+    }
+
+    .ButtonFooter .gogorioCS {
+
+        font-size: 14px;
+        padding: 8px 0px;
+
+    }
+
+    .ButtonFooter .gogorioCS span {
+        margin: 3px;
+        font-size: 20px;
+    }
+
+    .ButtonFooter .gogorioCS :nth-child(2) img {
+        width: 35px;
+        margin-left: 3px;
+        padding: 2px;
+
+    }
+}
+
+
+
+/* ////////////////////////////////////790 */
+
+@media only screen and (max-width:790px) {
+
+
+
+    .footer .relation {
+
+        padding: 6px;
+    }
+
+    .footer .relation .relation-divs {
+
+        gap: 4px;
+
+    }
+
+    .footer .relation .relation-divs h1 {
+        font-size: 18px;
+    }
+
+
+
+    .footer .relation .relation-divs .arow-img img {
+
+        width: 80px;
+    }
+
+    .footer .relation .relation-divs .loc-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer .relation .relation-divs .loc-img img {
+
+        width: 30px;
+    }
+
+    .footer .relation .relation-divs p {
+        font-size: 14px;
+    }
+
+    .footer .relation .relation-divs .phone-img {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .footer .relation .relation-divs .phone-img img {
+
+        width: 30px;
+    }
+
+
+    /* ButtonFooter */
+
+    .ButtonFooter {
+        gap: 10px;
+    }
+
+    .ButtonFooter .foter-text {
+        padding: 25px;
+        font-size: 15px;
+
+    }
+
+    .ButtonFooter .social {
+        padding: 4px;
+        width: 500px;
+    }
+
+    .ButtonFooter .social p {
+        font-size: 18px;
+    }
+
+    .ButtonFooter .social .socialImages {
+        gap: 10px;
+
+    }
+
+    .ButtonFooter .social .socialImages img {
+        width: 30px;
+    }
+
+
+    .ButtonFooter .social .socialImages :nth-child(4) img {
+        width: 50px;
+    }
+
+    .ButtonFooter .gogorioCS {
+
+        font-size: 10px;
+        padding: 4px 0px;
+
+    }
+
+    .ButtonFooter .gogorioCS span {
+        margin: 3px;
+        font-size: 18px;
+    }
+
+    .ButtonFooter .gogorioCS :nth-child(2) img {
+        width: 30px;
+        margin-left: 3px;
+        padding: 2px;
+
+    }
+}
+
+/* ////////////////////////////////////680*/
+
+@media only screen and (max-width:680px) {
+
+
+
+    .footer .relation {
+
+        padding: 4px;
+    }
+
+    .footer .relation .relation-divs {
+
+        gap: 3px;
+
+    }
+
+    .footer .relation .relation-divs h1 {
+        font-size: 15px;
+    }
+
+
+
+    .footer .relation .relation-divs .arow-img img {
+
+        width: 70px;
+    }
+
+    .footer .relation .relation-divs p {
+        font-size: 12px;
+    }
+
+    .footer .relation .relation-divs .loc-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer .relation .relation-divs .loc-img img {
+
+        width: 25px;
+    }
+
+    .footer .relation .relation-divs .phone-img {
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .footer .relation .relation-divs .phone-img img {
+
+        width: 25px;
+    }
+
+
+    /* ButtonFooter */
+
+    .ButtonFooter {
+        gap: 8px;
+    }
+
+    .ButtonFooter .foter-text {
+        padding: 20px;
+        font-size: 12px;
+    }
+
+    .ButtonFooter .social {
+        padding: 2px;
+        width: 400px;
+    }
+
+    .ButtonFooter .social p {
+        font-size: 16px;
+    }
+
+    .ButtonFooter .social .socialImages {
+        gap: 8px;
+
+    }
+
+    .ButtonFooter .social .socialImages img {
+        width: 25px;
+    }
+
+    .ButtonFooter .social .socialImages :nth-child(4) img {
+        width: 40px;
+    }
+
+    .ButtonFooter .gogorioCS {
+
+        font-size: 8px;
+        padding: 3px 0px;
+
+    }
+
+    .ButtonFooter .gogorioCS span {
+        margin: 2px;
+        font-size: 15px;
+    }
+
+    .ButtonFooter .gogorioCS :nth-child(2) img {
+        width: 25px;
+        margin-left: 2px;
+        padding: 1px;
+
+    }
+}
+
+/* ////////////////////////////////////480*/
+
+@media only screen and (max-width:480px) {
+
+
+    .footer {
+        height: 600px;
+    }
+
+    .footer .relation  {
+
+        padding: 2px;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-items: start;
+        gap: 10px;
+    }
+    
+
+    .footer .relation .relation-divs {
+
+        gap: 5px;
+        padding-right: 10%;
+
+    }
+
+    .footer .relation .relation-divs .arow-img img {
+        transform: rotate(90deg);
+    }
+
+    .footer .relation .relation-divs h1 {
+        font-size: 20px;
+    }
+
+
+
+    .footer .relation .relation-divs .arow-img img {
+
+        width: 100px;
+    }
+
+
+    .footer .relation .relation-divs p {
+        font-size: 18px;
+    }
+
+    .footer .relation .relation-divs .loc-img {
+        width: 60px;
+        height: 60px;
+
+    }
+
+    .footer .relation .relation-divs .loc-img img {
+
+        width: 40px;
+    }
+
+    .footer .relation .relation-divs .phone-img {
+        width: 60px;
+        height: 60px;
+
+    }
+
+    .footer .relation .relation-divs .phone-img img {
+
+        width: 40px;
+    }
+
+
+    /* ButtonFooter */
+
+    .ButtonFooter {
+        gap: 10px;
+    }
+
+    .ButtonFooter .foter-text {
+        padding: 20px;
+        font-size: 18px;
+        text-align: justify;
+        width: 90%;
+    }
+
+    .ButtonFooter .social {
+        padding: 5px;
+        width: 300px;
+    }
+
+    .ButtonFooter .social p {
+        font-size: 15px;
+       
+    }
+
+    .ButtonFooter .social .socialImages {
+        gap: 6px;
+
+    }
+
+    .ButtonFooter .social .socialImages img {
+        width: 35px;
+    }
+
+    .ButtonFooter .social .socialImages :nth-child(4) img {
+        width: 50px;
+    }
+
+    .ButtonFooter .gogorioCS {
+
+        font-size: 15px;
+        padding: 3px 0px;
+
+    }
+
+    .ButtonFooter .gogorioCS span {
+        margin: 4px;
+        font-size: 20px;
+    }
+
+    .ButtonFooter .gogorioCS :nth-child(2) img {
+        width: 40px;
+        margin-left: 4px;
+        padding: 5px;
+
+    }
+}

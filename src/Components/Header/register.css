@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "nastalig";
+  src: url(./font/IranNastaliq.woff2);
+}
+
+@font-face {
+  font-family: "popnise2";
+  src: url(./font/IRANSansWeb_Bold.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: "popnise2";
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #344CB7;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: auto;
+  row-gap: 15px;
+  border-radius: 15px;
+  background-color: rgba(0, 9, 87, .7);
+  box-shadow: 0 0 20px #888eaa;
+  position: absolute;
+  left: 35%;
+  padding: 20px 30px;
+}
+
+.container form h1 {
+  color: #becaff;
+  font-family: 'nastalig';
+  text-shadow: 1px 1px 2px #000;
+  font-size: 30px;
+}
+
+form div {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 0 5px;
+}
+
+form div label {
+  color: #becaff;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "nastalig";
+  text-shadow: 1px 1px 2px black;
+  margin-right: 0;
+}
+
+.container form input {
+  border: 1px solid #577BC1;
+  width: 70%;
+  padding: 10px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, .015);
+  color: #fff;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.container form input:hover {
+  box-shadow: 0 0 5px #072dd8;
+}
+
+.container form input:hover::placeholder {
+  font-weight: 500;
+  transform: translate(-3px, 3px);
+  font-weight: 400;
+  color: #67cbef;
+}
+
+.container form input::placeholder {
+  transition: all .5s ease;
+  font-family: "popnise2";
+  font-size: 15px;
+}
+
+.submit {
+  font-family: "popnise2";
+  color: #67cbef !important;
+  width: 50% !important;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  right: 108px;
+  bottom: -16px;
+  text-wrap: nowrap;
+}
+
+.passwordVisable {
+  position: absolute;
+  left: 30px;
+  top: 12px;
+}
+
+/* استایل‌های پایه برای ReCAPTCHA */
+.recaptcha {
+  margin: 20px auto; /* مرکز کردن افقی */
+  transform: scale(1); /* اندازه پیش‌فرض */
+  transform-origin: center; /* نقطه شروع تغییر اندازه */
+}
+
+/* Media Queries برای ریسپانسیو */
+
+@media (max-width: 1024px) {
+  .container form {
+      width: 40%;
+      left: 30%;
+  }
+
+  .container form h1 {
+      font-size: 28px;
+  }
+
+  form div label {
+      font-size: 18px;
+  }
+
+  .container form input {
+      font-size: 11px;
+  }
+
+  .submit {
+      width: 60% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .container form {
+      width: 50%;
+      left: 25%;
+  }
+
+  .container form h1 {
+      font-size: 24px;
+  }
+
+  form div label {
+      font-size: 16px;
+  }
+
+  .container form input {
+      font-size: 10px;
+  }
+
+  .submit {
+      width: 70% !important;
+  }
+
+  .error {
+      right: 80px;
+      font-size: 10px;
+  }
+
+  .recaptcha {
+      transform: scale(0.9); /* کاهش اندازه برای تبلت‌ها */
+  }
+}
+
+@media (max-width: 480px) {
+  .container form {
+      width: 80%;
+      left: 10%;
+      padding: 15px 20px;
+  }
+
+  .container form h1 {
+      font-size: 20px;
+  }
+
+  form div label {
+      font-size: 14px;
+  }
+
+  .container form input {
+      font-size: 9px;
+      height: 40px;
+  }
+
+  .submit {
+      width: 80% !important;
+  }
+
+  .error {
+      right: 60px;
+      font-size: 9px;
+  }
+
+  .passwordVisable {
+      left: 20px;
+      top: 10px;
+  }
+
+  .recaptcha {
+      transform: scale(0.8); /* کاهش اندازه برای موبایل‌ها */
+  }
+}

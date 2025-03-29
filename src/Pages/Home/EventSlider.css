@@ -1,0 +1,57 @@
+/* استایل‌های پایه */
+.slider {
+    width: 100%;
+    height: 100vh; /* ارتفاع کامل صفحه */
+    position: relative;
+    overflow: hidden; /* مخفی کردن اسلایدهای اضافی */
+}
+
+.slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* همه اسلایدها مخفی هستند */
+    transition: opacity 0.5s ease-in-out; /* انیمیشن تغییر اسلاید */
+}
+
+.slide.active {
+    opacity: 1; /* فقط اسلاید فعال نمایش داده می‌شود */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* تصویر را به اندازه اسلاید تنظیم می‌کند */
+}
+
+/* Media Queries برای ریسپانسیو */
+
+/* برای تبلت‌ها (عرض کمتر از 768px) */
+@media (max-width: 768px) {
+    .slider {
+        height: 70vh; /* کاهش ارتفاع برای تبلت‌ها */
+    }
+
+    .slide img {
+        object-fit: contain; /* تصویر را بدون برش نمایش بده */
+    }
+}
+
+/* برای موبایل‌ها (عرض کمتر از 480px) */
+@media (max-width: 480px) {
+    .slider {
+        height: 50vh; /* کاهش ارتفاع برای موبایل‌ها */
+    }
+
+    .slide img {
+        object-fit: contain; /* تصویر را بدون برش نمایش بده */
+    }
+}

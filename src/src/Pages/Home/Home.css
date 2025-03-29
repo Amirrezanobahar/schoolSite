@@ -1,0 +1,274 @@
+@keyframes zoomBackground {
+    0% {
+        background-size: 100%;
+    }
+
+    100% {
+        background-size: 120%;
+    }
+}
+
+.HomeBackgrond {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: url(../../images/img5.jpg);
+    z-index: -1;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.HomeBackgrond::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgb(20, 124, 123, .2);
+}
+
+
+
+.slider {
+    width: 100%;
+    height: 800px;
+
+    /* transform: scale(1.2); */
+}
+
+.slider .sliderContainer {
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-position: center center !important;
+    display: inline-grid;
+    overflow: hidden;
+    animation: zoomBackground 10s infinite alternate;
+
+}
+
+
+
+
+.SchoolHistory {
+    z-index: 2;
+    background-color: #fff;
+    height: auto;
+    padding: 60px 100px;
+    font-family: "IRANSansWeb.woff2";
+    position: relative;
+
+}
+
+.SchoolHistory::after {
+    content: "";
+    background-color: #a94848;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 130px;
+    top: 100px;
+    background: url(../../icons/Shoori.svg);
+    background-size: cover;
+}
+
+.SchoolHistory span {
+    font-size: 22px;
+    font-family: "IRANSansWeb.woff2";
+    color: gray;
+
+}
+
+.SchoolHistory span h1 {
+    color: black;
+}
+
+.SchoolHistory p {
+    font-size: 22px;
+    font-family: "IRANSansWeb.woff2";
+    color: gray;
+    width: 800px;
+    text-align: justify;
+
+}
+
+.RegistrationDiv {
+    height: 200px;
+    background-color: rgba(255, 255, 255, .5);
+    position: absolute;
+    bottom: -500px;
+    left: 125px;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: "IRANSansWeb.woff2";
+}
+
+.RegistrationDiv h1 {
+    color: #981414;
+}
+
+.RegistrationDiv p {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: "IRANSansWeb.woff2";
+    color: rgb(49, 49, 49);
+    padding: 10px;
+    font-weight: bold;
+    /* text-align: justify; */
+}
+
+.akbar {
+    background-color: #fff;
+    height: 600px;
+    margin-top: 500px;
+    display: flex;
+}
+
+.akbar .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px;
+    text-align: justify;
+
+}
+
+.akbar .left {
+
+    flex: 1;
+    background: url(../../images/akbar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+.GenralContent {
+    height: 750px;
+    background: url(../../images/tabriz3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-around;
+    position: relative;
+
+}
+
+.GenralContent::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(25, 0, 255, 0.3);
+}
+
+.GenralContent .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.GenralContent .row .content {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GenralContent .row .content .text-in-content {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    gap: 10px;
+
+}
+
+.GenralContent .row .content .text-in-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    opacity: .9;
+}
+
+.GenralContent .row .content .text-in-content h1 {
+    font-family: "IRANSansWeb.woff2";
+    color: #d2691e;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+.GenralContent .row .content .text-in-content span {
+    font-family: "IRANSansWeb.woff2";
+    font-size: 24px;
+    color: rgb(213, 213, 213);
+    text-shadow: 1px 1px 2px black;
+    font-weight: 800;
+    width: 150px;
+    text-align: center;
+}
+
+.Teachers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F4C75;
+    height: 500px;
+    width: 100%;
+    position: relative;
+
+}
+
+.title_teachers {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: #fff;
+    font-family:"IRANSansWeb.woff2";
+    font-size: 24px;
+    text-shadow: 1px 1px 2px black;
+} 
+
+#slider{
+    border-radius: 10px;
+}
+#main-slider-container {
+    width: 65% !important;
+}
+
+.slider-card-title {
+    text-align: center;
+    font-family:"IRANSansWeb.woff2";
+    font-size: 24px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255,.5);
+    font-weight: 500;
+}
+
+.slider-card-description {
+    text-align: center;
+    font-family:"IRANSansWeb.woff2";
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255,.5);
+    font-weight: 400;
+}
+.slider-card{
+    background-color: #3282B8 !important;
+}

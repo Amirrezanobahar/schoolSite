@@ -1,0 +1,137 @@
+/* StudentPanel.css */
+
+.student-panel {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-panel h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.student-info, .messages, .comments, .change-username, .change-password {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.student-info h2, .messages h2, .comments h2, .change-username h2, .change-password h2 {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.student-info p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.messages ul, .comments ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.messages li, .comments li {
+    background-color: #f1f1f1;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+}
+
+.messages li strong, .comments li strong {
+    color: #007bff;
+}
+
+.change-username form, .change-password form {
+    display: flex;
+    flex-direction: column;
+}
+
+.change-username input, .change-password input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.change-username button, .change-password button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.change-username button:disabled, .change-password button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.success-message {
+    color: #28a745;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.error-message {
+    color: #dc3545;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Collapsible Styles */
+.collapsible {
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.collapsible:hover {
+    background-color: #0056b3;
+}
+
+.collapsible-content {
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+/* استایل دکمه Logout */
+.logout-button {
+    padding: 10px 20px;
+    background-color: #dc3545; /* رنگ قرمز */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c82333; /* رنگ قرمز تیره‌تر هنگام hover */
+}

@@ -1,0 +1,85 @@
+.file-uploader-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.file-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.upload-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.upload-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.message {
+    color: #d9534f;
+    margin-top: 10px;
+}
+
+.file-list {
+    margin-top: 20px;
+}
+
+.file-list h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.file-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.file-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.file-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.file-item a:hover {
+    text-decoration: underline;
+}
+
+.delete-button {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

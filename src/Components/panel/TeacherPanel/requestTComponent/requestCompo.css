@@ -1,0 +1,240 @@
+/* Comments.css */
+
+.comments-container {
+    padding: 20px;
+    font-family: sans-serif;
+  }
+  
+  .comments-title {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .comment-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .comment-text {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .comment-rating {
+    font-style: italic;
+    color: #777;
+  }
+  
+  .comments-empty {
+    color: #777;
+  }
+  
+  .comments-loading {
+    color: #777;
+  }
+  
+  .comments-error {
+    color: red;
+  }
+  
+  .add-specifications-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.input:disabled {
+    background-color: #e9e9e9;
+    cursor: not-allowed;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-button:disabled {
+    background-color: #a0a0a0;
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: #ff0000;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.success-message {
+    color: #28a745;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* استایل کلی پنل معلم */
+.teacher-panel-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Vazir', Arial, sans-serif; /* فونت فارسی */
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* عنوان پنل */
+.teacher-panel-title {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* لیست پیام‌ها */
+.teacher-panel-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* استایل هر پیام */
+.teacher-panel-message {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.teacher-panel-message:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* عنوان پیام */
+.teacher-panel-message-title {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* متن پیام */
+.teacher-panel-message-body {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* تاریخ پیام */
+.teacher-panel-message-date {
+  font-size: 0.9rem;
+  color: #888;
+  text-align: left;
+}
+
+/* حالت عدم وجود پیام */
+.teacher-panel-no-messages {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* استایل لودینگ */
+.teacher-panel-loading {
+  font-size: 1.2rem;
+  color: #007bff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* استایل خطا */
+.teacher-panel-error {
+  font-size: 1.2rem;
+  color: #ff4d4f;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* رسپانسیو برای صفحات کوچک */
+@media (max-width: 768px) {
+  .teacher-panel-container {
+      padding: 15px;
+  }
+
+  .teacher-panel-title {
+      font-size: 1.8rem;
+  }
+
+  .teacher-panel-message-title {
+      font-size: 1.3rem;
+  }
+
+  .teacher-panel-message-body {
+      font-size: 0.9rem;
+  }
+
+  .teacher-panel-message-date {
+      font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .teacher-panel-container {
+      padding: 10px;
+  }
+
+  .teacher-panel-title {
+      font-size: 1.5rem;
+  }
+
+  .teacher-panel-message-title {
+      font-size: 1.2rem;
+  }
+
+  .teacher-panel-message-body {
+      font-size: 0.8rem;
+  }
+
+  .teacher-panel-message-date {
+      font-size: 0.7rem;
+  }
+}
